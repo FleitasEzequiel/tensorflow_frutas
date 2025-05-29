@@ -125,7 +125,7 @@ async function entrenarModelo() {
 
   // Guardamos el modelo entrenado en el navegador (IndexedDB)
   await model.save('indexeddb://modelo-frutas');
-
+  await model.save('downloads://modelo-frutas')
   // Avisamos al usuario que el entrenamiento finalizó con éxito
   alert('✅ Modelo entrenado y guardado exitosamente.');
 }
